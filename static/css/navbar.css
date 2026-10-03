@@ -1,0 +1,63 @@
+.subnav{
+    padding: 10px;
+    background-color: #131921;
+    color: white;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.hamburger{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+.nav1{
+    display: flex;
+    gap: 20px;
+}
+
+.home_nav{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.fresh{
+    width: 50px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='white' viewBox='0 0 24 24'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: left 35px center;
+}
+
+.home_nav div:hover{
+    outline: 1px solid white;
+    padding: 2px;
+}
+
+.hamburger:hover{
+    outline: 1px solid white;
+    padding: 2px;
+}
+
+.sale{
+    display: flex;
+    align-items: center;
+    padding:5px;
+    gap: 10px;
+}
+
+.sale i:first-child{
+    color: goldenrod;
+}
+
+.sale:hover{
+    outline: 1px solid white;
+    padding: 2px;
+}
+
+.icon_box_sign_in{
+    display: flex;
+    gap: 5px;
+    padding: auto 10px;
+}

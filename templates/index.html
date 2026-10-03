@@ -1,0 +1,87 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {% block title %} home {% endblock title %} </title>
+    <link rel="stylesheet" href= "{% static "css/index.css" %}">
+    <link rel="stylesheet" href= "{% static "css/navbar.css" %}">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="{% static "image/a1.png" %}" alt="">
+        </div>
+
+        <div class="location">
+            <div class="location-icon">
+                <img src="{% static "image/location.png" %}" alt="">
+            </div>
+
+            <div class="location-text">
+                <div class="delivering">Delivering to New Delhi 110005</div>
+                <div class="update">Update location</div>
+            </div>
+        </div>
+
+        <div class = "Text_box">
+        </div>
+
+        <div class = "dropdown">
+            <select name="" id="">
+                <option value="">All</option>
+                <option value="">1</option>
+                <option value="">1</option>
+                <option value="">1</option>
+                <option value="">1</option>
+                <option value="">1</option>
+            </select>
+            <input type="text" class = "search_box">
+            <div class = "search_icon">
+                <i class = "fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+
+        <div class="language">
+            <select name="" id="">
+                <option value="">🇮🇳 EN</option>
+                <option value="">🇬🇧 EN</option>
+                <option value="">🇺🇸 EN</option>
+                <option value="">🏴󠁧󠁢󠁥󠁮󠁧󠁿 SW</option>
+                <option value="">🇺🇦 RU</option>
+                <option value="">🇰🇷 KR</option>
+            </select>
+        </div>
+
+        <div class="account">
+
+            <div class="sign_in">
+                <p>Hello, sign-in</p>
+                <p>Account & Lists</p>
+            </div>
+
+            <div class="order">
+                <p>Returns</p>
+                <p>& Orders</p>
+            </div>
+
+            <div class="cart_icon">
+                <div class="cart_count">0</div>
+                <div class="cart_emoji">🛒</div>
+                <div class="cart_text">Cart</div>
+            </div>
+        </div>
+    </header>
+
+    {% include "navbar.html" %}
+    {% include "sidebar.html" %}
+
+    <div class="body"></div>
+
+    {% include "footer.html" %}
+    
+</body>
+</html>

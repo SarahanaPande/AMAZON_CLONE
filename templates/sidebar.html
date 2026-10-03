@@ -1,0 +1,27 @@
+
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/sidebar.css' %}">
+
+<div class="Sign_in_box" id="sidebar">
+    <div class="icon-box-sign-in">
+        <i class="fa-solid fa-circle-user"></i>
+        <p>Hello, Sign-in</p>
+        <i onclick="hide_side_bar()" class="fa-solid fa-xmark"></i>
+    </div>
+
+    {% for section in sidebar_sect %}
+        <div class="sidebar-section">
+            <h3>{{ section.title }}</h3>
+
+            {% for item in section.items %}
+                <p class="sidebar-item">
+                    {{ item.name }}
+                </p>
+            {% endfor %}
+        </div>
+    {% endfor %}
+
+</div>
+
+<script src="{% static 'js/sidebar.js' %}"></script>
